@@ -67,15 +67,42 @@ a:active { /* selected link */
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #D4674C;
+  background-color: #66727E;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #000000; /* width of the border, type, color */
   transition: 0.2s opacity;
           }
           .button:hover {
+            color: #ffffff;
             opacity: 0.8; /* Reduces the opacity of the button to 80% */
             text-decoration: none;
-          }
+                        }
+
+.button.contact {
+  background-color: transparent;
+  color: #66727E;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+                }
+                  .button.contact:hover {
+                  background-color: #D4674C;
+                  color: #ffffff;
+                  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+                  text-decoration: none;
+                                          }
+
+                                          .button.CV {
+                                            background-color: transparent;
+                                            color: #66727E;
+                                            text-transform: uppercase;
+                                            border: 2px solid #ff7f50;
+                                                          }
+                                                            .button.contact:hover {
+                                                            background-color: #D4674C;
+                                                            color: #ffffff;
+                                                            opacity: 0.8; /* Reduces the opacity of the button to 80% */
+                                                            text-decoration: none;
+                                                                                    }
