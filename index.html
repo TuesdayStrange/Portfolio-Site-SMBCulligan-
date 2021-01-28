@@ -17,10 +17,11 @@
 
 <body>
   <header>
+    <div class="container">
+    <img src="img/basic/Logo.png" alt="SMBCulligan"/>
 
-    <img src="img/basic/Logo.png" alt="SMBCulligan">
     <nav>
-      <ul>
+      <ul class="navigation">
         <li><a href="index.html" "#work">Work</a></li>
         <li><a href="about.html" "#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -29,9 +30,9 @@
   </header>
   <main>
 
-    <div>
+    <div id = "hero">
       <!--section-->
-      <div>
+      <div class = "container">
         <!--container-->
 
         <h1>Hi! I'm Stacey Culligan <span> </span></h1>
@@ -44,14 +45,16 @@
     </div>
 
 
-    <div>    <!--work section-->
-      <div>  <!--container-->
+    <div id = "work">
+      <!--section-->
+      <div class = "container">
+        <!--container-->
         <h2>My Work</h2>
 
-        <div>  <!--row-->
+        <div class = "row">  <!--row-->
           <div><!--column 1-->
             <picture>
-              <source srcset="img/expedition/main_1200x800.png" media="(max-width:767px)">
+              <source srcset="img/expedition/main_1200x800.png" media="(min-width:767px)">
               <img src="img/expedition/main_600x400.png" alt="The Lost Expedition Mockup">
             </picture>
           </div>
@@ -65,10 +68,10 @@
         </div>
 
 
-        <div>  <!--row-->
+        <div class = "row">  <!--row-->
           <div><!--column 1-->
             <picture>
-              <source srcset="img/lexi/main_1200x800.png" media="(max-width:767px)">
+              <source srcset="img/lexi/main_1200x800.png" media="(min-width:767px)">
               <img src="img/lexi/main_600x400.png" alt="Lexi Mockup">
             </picture>
           </div>
@@ -88,7 +91,7 @@
 
 <footer id="contact">
 
-  <div> <!--container -->
+  <div class= "container"> <!--container -->
     <h2>Get in Touch</h2>
     <p>Interested in learning more about my work? Drop me a line! Please call <a href="tel +49 1234567">+49 1234567</a>. Prefer email?</p>
     <div>
