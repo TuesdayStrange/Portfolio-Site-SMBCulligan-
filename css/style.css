@@ -7,8 +7,20 @@ Header Text Color (black): #000000;
 */
 
 
+header {
+/*  background-color: #ffffff;
+  padding: 15px 5px 10px 5px;
+  margin: 10px;
+  border-bottom: 3px solid #000000;
+  img {
+  width: 20%;
+        }  my logo is WAY too big, but this doesn't seem right*/
+      }
+
+
 body{
   background-color: #DDE5E7;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   font-family: 'Roboto', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -106,3 +118,13 @@ a:active { /* selected link */
                                                             opacity: 0.8; /* Reduces the opacity of the button to 80% */
                                                             text-decoration: none;
                                                                                     }
+
+
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
