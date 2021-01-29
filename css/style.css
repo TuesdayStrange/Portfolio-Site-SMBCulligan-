@@ -8,13 +8,17 @@ Header Text Color (black): #000000;
 
 
 header {
-/*  background-color: #ffffff;
-  padding: 15px 5px 10px 5px;
-  margin: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 16px;
   border-bottom: 3px solid #000000;
-  img {
-  width: 20%;
-        }  my logo is WAY too big, but this doesn't seem right*/
+
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+
+
       }
 
 
@@ -27,6 +31,7 @@ body{
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #66727E;
     }
+
 
     img {
     width: 100%;
@@ -124,7 +129,38 @@ a:active { /* selected link */
 /* Layout styling */
 .container {
   padding: 0 15px;
-}
+            }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+      }
+
+  #hero h1 {
+  text-align: center; /* Centers text */
+                }
+
+  .logo {
+  max-width: 150px;
+          }
+
+nav > ul > li {
+  text-align: center; /* Centers text */
+  display: inline-block;
+  width: 100%
+  list-style-type: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #D4674C;
+          }
+            nav > ul > li > a:hover { /*not working apparently*/
+              color: #66727E
+              opacity: 0.8; /* Reduces the opacity of the button to 80% */
+              text-decoration: none;
+                                        }
+
+  #hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
