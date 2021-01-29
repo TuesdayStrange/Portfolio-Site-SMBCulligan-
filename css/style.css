@@ -161,7 +161,8 @@ nav>ul>li {
   text-align: center;
   /* Centers text */
   display: inline-block;
-  width: 100% list-style-type: none;
+  width: 100%;
+  list-style-type: none;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -170,7 +171,8 @@ nav>ul>li {
 
 nav>ul>li>a:hover {
   /*not working apparently*/
-  color: #66727E opacity: 0.8;
+  color: #66727E;
+  opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
