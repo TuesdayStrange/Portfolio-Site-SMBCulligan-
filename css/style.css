@@ -5,162 +5,193 @@ Secondary Color (dark grey): #66727E;
 Teritary Color (orange): #D4674C;
 Header Text Color (black): #000000;
 */
+* {
+  box-sizing: border-box;
+}
 
-
-header {
-  background-color: #ffffff;
-  text-align: center;
-  margin: 16px;
-  border-bottom: 3px solid #000000;
-
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  position: relative;
-
-
-      }
-
-
-body{
+body {
   background-color: #DDE5E7;
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: 0 auto;
+  /* No spacing to top and bottom and auto spacing to left and right */
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #66727E;
-    }
+}
 
-
-    img {
-    width: 100%;
-        }
+img {
+  width: 100%;
+}
 
 h1, h2, h3, h4 {
-    font-family: 'Fjalla One', sans-serif;
-    line-height: 1.4;
-    color:#000000;
-                }
+  font-family: 'Fjalla One', sans-serif;
+  line-height: 1.4;
+  color: #000000;
+}
 
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-    }
+}
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
-    }
+}
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-    }
+}
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
-    }
+}
 
-    img {
-    width: 100%;
-        }
 
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
-    }
-a:visited { /* visited link */
-  color: #ff7f50;}
-a:hover
-a:focus{
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
-        }
-a:active { /* selected link */
-  color: #994c30;
-          }
+  text-decoration: none;
+  /* No underlining */
+}
 
+a:visited {
+  /* visited link */
+  color: #ff7f50;
+}
+
+a:hover a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #994c30;
+}
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #66727E;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #000000; /* width of the border, type, color */
+  border-bottom: 2px solid #000000;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
-          }
-          .button:hover {
-            color: #ffffff;
-            opacity: 0.8; /* Reduces the opacity of the button to 80% */
-            text-decoration: none;
-                        }
+}
+
+.button:hover {
+  color: #ffffff;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
 
 .button.contact {
   background-color: transparent;
   color: #66727E;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
-                }
-                  .button.contact:hover {
-                  background-color: #D4674C;
-                  color: #ffffff;
-                  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-                  text-decoration: none;
-                                          }
+}
 
-                                          .button.CV {
-                                            background-color: transparent;
-                                            color: #66727E;
-                                            text-transform: uppercase;
-                                            border: 2px solid #ff7f50;
-                                                          }
-                                                            .button.contact:hover {
-                                                            background-color: #D4674C;
-                                                            color: #ffffff;
-                                                            opacity: 0.8; /* Reduces the opacity of the button to 80% */
-                                                            text-decoration: none;
-                                                                                    }
+.button.contact:hover {
+  background-color: #D4674C;
+  color: #ffffff;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
 
+.button.CV {
+  background-color: transparent;
+  color: #66727E;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
 
+.button.contact:hover {
+  background-color: #D4674C;
+  color: #ffffff;
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  margin: 16px;
+  border-bottom: 3px solid #000000;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+}
 
 /* Layout styling */
 .container {
   padding: 0 15px;
-            }
+}
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-      }
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
 
-  #hero h1 {
-  text-align: center; /* Centers text */
-                }
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
 
-  .logo {
+.logo {
   max-width: 150px;
-          }
+}
 
-nav > ul > li {
-  text-align: center; /* Centers text */
+nav>ul>li {
+  text-align: center;
+  /* Centers text */
   display: inline-block;
-  width: 100%
-  list-style-type: none;
+  width: 100% list-style-type: none;
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #D4674C;
-          }
-            nav > ul > li > a:hover { /*not working apparently*/
-              color: #66727E
-              opacity: 0.8; /* Reduces the opacity of the button to 80% */
-              text-decoration: none;
-                                        }
+}
 
-  #hero {
+nav>ul>li>a:hover {
+  /*not working apparently*/
+  color: #66727E opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+#hero {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+/* Footer styling */
+footer{
+  text-align: center;
+}
+
+.social{
+padding: 2rem 0;
+ }
+
+.social a{
+  display: inline-block;
+  width: 50px
 }
