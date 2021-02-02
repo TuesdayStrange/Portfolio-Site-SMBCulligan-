@@ -91,8 +91,8 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #000000;
   /* width of the border, type, color */
-  transition-duration: 0.2s;
-  transition-property: 0.2s opacity;
+  opacity: 1;
+    transition: 0.2s opacity;
   /* I don't know if this is working properly. */
 }
 
@@ -101,8 +101,7 @@ a:active {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  transition-duration: 0.2s;
-  transition-property: 0.2s opacity;
+
 }
 
 .button.contact {
@@ -110,8 +109,7 @@ a:active {
   color: #66727E;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
-  transition-duration: 0.2s;
-  transition-property: 0.2s opacity;
+
 }
 
 .button.contact:hover {
@@ -233,14 +231,13 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
-
+}
     nav {
       width: auto;
       float: right;
-      /* this is not floating the to the right properly, they're staying centered in a list */
-      margin-top: 4px;
+      margin-top:50p;
     }
-  }
+    nav>ul>li {width:auto;}
 
   .col-md-6 {
     width: 50%;
@@ -251,20 +248,20 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-
-    nav {
-      width: auto;
-      float: right;
-      /* this is not floating the to the right properly, they're staying centered in a list */
-      margin-top: 4px;
-    }
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
   }
 
-  .col-md-6 {
-    width: 50%;
+  .col-lg-12 {
+    width: 100%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -272,27 +269,7 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
 
-    nav {
-      width: auto;
-      float: right;
-      /* this is not floating the to the right properly, they're staying centered in a list */
-      margin-top: 4px;
-    }
-  }
-
-  .col-md-6 {
-    width: 60% 40%;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 /* ==============================
